@@ -1,0 +1,11 @@
+<%= form_with(model: schedule, local: true) do |form| %>
+  <ul>
+    <li><%= form.text_field :task1, placeholder: "task1" %></li>
+    <li><%= form.text_field :task2, placeholder: "task2" %></li>
+    <li><%= form.text_field :task3, placeholder: "task3" %></li>
+    <li><%= form.text_field :task4, placeholder: "task4" %></li>
+    <li><%= form.text_field :task5, placeholder: "task5" %></li>
+    <li><%= form.text_field :task6, placeholder: "task6" %></li>
+  </ul>
+  <%= form.submit "作成" %>
+<% end %>

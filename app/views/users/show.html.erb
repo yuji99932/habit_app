@@ -1,0 +1,15 @@
+<div class="contents">
+  <h3>マイページ</h3>
+  <p><%= @nickname %>さんのスケジュール一覧</p>
+  <% @schedules.each do |schedule| %>
+    <%= render partial: "schedules/schedule", locals: { schedule: schedule } %>
+  <% end %>
+  <ul class="mypage_list">
+    <li>
+      個人情報変更
+    </li>
+    <li>
+      
+    </li>
+  </ul>
+</div>

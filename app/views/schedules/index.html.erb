@@ -1,16 +1,6 @@
 <div class="contents">
+  <%= link_to "作成する", new_schedule_path, class: "post" %>
   <% @schedules.each do |schedule| %>
-    <p><%= schedule.text %></p>
-    <ul class="more_list">
-      <li>
-        <%= link_to '詳細', schedule_path(schedule.id) %>
-      </li>
-      <li>
-        <%= link_to '編集', edit_schedule_path(schedule.id) %>
-      </li>
-      <li>
-        <%= link_to '削除', schedule_path(schedule.id), method: :delete, data: {confirm: "削除しますか？"} %>
-      </li>
-    </ul>
+    <%= render partial: "schedule", locals: { schedule: schedule } %>
   <% end %>
 </div>

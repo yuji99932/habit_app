@@ -1,6 +1,8 @@
 <!DOCTYPE html>
-<html>
+<html lang="ja">
   <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=devise-width, initial-scale=1.0">
     <title>HabitApp</title>
     <%= csrf_meta_tags %>
     <%= csp_meta_tag %>
@@ -10,19 +12,23 @@
   </head>
 
   <body>
-    <header class="header">
-      <a class="toppage" href="/">HABIT</a>
-      <% if user_signed_in? %>
-        <div class="user_nav grid-6">
-          <%= link_to "マイページ", user_path(current_user.id) %>
-          <%= link_to "ログアウト", destroy_user_session_path, method: :delete %>
-        </div>
-      <% else %>
-        <div class="grid-6">
-          <%= link_to "ログイン", new_user_session_path, class: "post" %>
-          <%= link_to "新規登録", new_user_registration_path, class: "post" %>
-        </div>
-      <% end %>
+    <header>
+      <nav class="header">
+        <a><%= link_to "Night-Habit", root_path, class: "header__logo" %></a>
+        <a><%= link_to "作成する", new_schedule_path, class: "post" %></a>
+        <% if user_signed_in? %>
+          <ul class="user_nav">
+            <li><%= link_to "マイスケジュール", schedules_path, class: "header__list" %></li>
+            <li><%= link_to "マイページ", user_path(current_user.id), class: "header__list" %></li>
+            <li><%= link_to "ログアウト", destroy_user_session_path, method: :delete, class: "header__list" %></li>
+          </ul>
+        <% else %>
+          <div class="new_user_nav">
+            <%= link_to "ログイン", new_user_session_path, class: "header__list new_header_list" %>
+            <%= link_to "新規登録", new_user_registration_path, class: "header__list new_acount" %>
+          </div>
+        <% end %>
+      </nav>
     </header>
     <%= yield %>
   </body>

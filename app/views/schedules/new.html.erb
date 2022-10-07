@@ -1,4 +1,24 @@
-<div class="contents">
-  <h3>作成する</h3>
-  <%= render partial: "form", locals: { schedule: @schedule } %>
+<div class="contents contents__edit">
+  <%= form_with(model: @schedule, local: true) do |form| %>
+  <h2 class="keyvisual__title keymessage__edit">作成する</h2>
+    <h2 class="keyvisual__title keymessage">就寝前のルーティーンを決めましょう</h2>
+    <ul class="content_list">
+      <li class="content_box"><span>1 </span><%= form.text_field :content1, placeholder: "例：お風呂", class: "content" %></li>
+      <li class="content_box"><span>2 </span><%= form.text_field :content2, placeholder: "例：読書", class: "content"%></li>
+      <li class="content_box"><span>3 </span><%= form.text_field :content3, class: "content" %></li>
+      <li class="content_box"><span>4 </span><%= form.text_field :content4, class: "content" %></li>
+    </ul>
+    <h2 class="keyvisual__title keymessage">明日やるべきことを６つ入力しましょう</h2>
+    <ul class="content_list">
+      <li class="content_box"><span>1: </span><%= form.text_field :task1, placeholder: "例：勉強", class: "content" %></li>
+      <li class="content_box"><span>2: </span><%= form.text_field :task2, placeholder: "例：課題", class: "content"%></li>
+      <li class="content_box"><span>3: </span><%= form.text_field :task3, class: "content" %></li>
+      <li class="content_box"><span>4: </span><%= form.text_field :task4, class: "content" %></li>
+      <li class="content_box"><span>5: </span><%= form.text_field :task5, class: "content" %></li>
+      <li class="content_box"><span>6: </span><%= form.text_field :task6, class: "content" %></li>
+    </ul>
+    <div class="section__btnWrapper detail__btn new__btn">
+      <%= form.submit "作成", class: "section__btn" %>
+    </div>
+  <% end %>
 </div>

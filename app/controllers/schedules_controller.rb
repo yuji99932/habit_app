@@ -3,7 +3,7 @@ class SchedulesController < ApplicationController
   before_action :move_to_sign
   def index
     @nickname = current_user.nickname
-    @schedules = current_user.schedules
+    @schedules = current_user.schedules.order(updated_at: :desc).limit(1)
   end
   
   def new
@@ -17,7 +17,7 @@ class SchedulesController < ApplicationController
   def destroy
     schedule = Schedule.find(params[:id])
     schedule.destroy
-    redirect_to(root_path)
+    redirect_to(schedules_path)
   end
   
   def edit
@@ -29,11 +29,23 @@ class SchedulesController < ApplicationController
   end
   
   def show
+    @nickname = current_user.nickname
   end
+  
+  def newhabit
+    @schedule = Schedule.new
+    render("newhabit")
+  end
+  
+  def newschedule
+    @schedule = Schedule.new
+    render("newschedule")
+  end
+  
   
   private
   def schedule_params
-    params.require(:schedule).permit(:task1, :task2, :task3, :task4, :task5, :task6).merge(user_id: current_user.id)
+    params.require(:schedule).permit(:task1, :task2, :task3, :task4, :task5, :task6, :content1, :content2, :content3, :content4).merge(user_id: current_user.id)
   end
   
   def set_schedule

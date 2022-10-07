@@ -1,0 +1,384 @@
+body {
+  font-family: 'Hiragino Kaku Gothic ProN', 'ヒラギノ角ゴ ProN W3', 'Meiryo', 'メイリオ', sans-serif;
+  line-height: 1.8;
+  padding-top: 86px;
+  margin: 0px;
+  padding: 0px;
+}
+
+header {
+  top: 0px;
+  right: 0px;
+  bottom: 0px;
+  left: 0px;
+  width: 100%;
+}
+
+.header {
+  font-family: brandon-grotesque, sans-serif;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 85px;
+  padding: 0 20px;
+  background-color: rgba(26, 192, 232, 0.8);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.header__logo {
+  display: block;
+  color: #ffffff;
+  font-size: 30px;
+  font-weight: 400;
+  text-decoration: none;
+  letter-spacing: 1.2px;
+  position: relative;
+  left: -150px;
+}
+
+.post {
+  display: block;
+  color: #ffffff;
+  font-size: 15px;
+  font-weight: 400;
+  text-decoration: none;
+  letter-spacing: 1.2px;
+  position: relative;
+  right: -210px;
+}
+
+.user_nav {
+  display: flex;
+  align-items: center;
+  padding: 27px 0;
+  margin-left: 35px;
+}
+
+.user_nav li {
+  margin-right: 48px;
+}
+
+.new_user_nav {
+  display: flex;
+  margin-right: 100px;
+  position: relative;
+  left: -35px;
+}
+
+.new_acount {
+  margin-left: 30px;
+}
+
+.header__list {
+  display: block;
+  color: #ffffff;
+  font-size: 15px;
+  font-weight: 400;
+  text-decoration: none;
+  letter-spacing: 1.2px;
+}
+
+.header__block {
+  display: flex;
+  align-items: center;
+  padding: 27px 0;
+}
+
+.header__block li {
+  margin-right: 48px;
+}
+
+.header__block li a {
+  display: block;
+  color: #ffffff;
+  font-size: 15px;
+  font-weight: 400;
+  text-decoration: none;
+  letter-spacing: 1.2px;
+}
+
+.header__block li a:last-child {
+  margin-right: 0px;
+}
+
+.header__btn {
+  padding: 10px 20px;
+  border: solid 1px #ffffff;
+  border-radius: 3px;
+}
+
+.header__btn a {
+  display: block;
+  color: #ffffff;
+  font-size: 15px;
+  font-weight: 400;
+  text-decoration: none;
+  letter-spacing: 1.2px;
+}
+
+.keyvisual {
+  font-family: "brandon-grotesque", "sans-serif";
+  padding: 200px 0 150px;
+  background-color: rgba(170, 192, 200, 0.8);
+  height: 100vh;
+}
+
+.keyvisual__title {
+  margin-bottom: 5px;
+  color: #ffffff;
+  font-size: 44px;
+  font-weight: bold;
+  letter-spacing: 2.5px;
+  text-align: center;
+}
+
+.keyvisual__desc {
+  margin-bottom: 80px;
+  color: #ffffff;
+  font-size: 16px;
+  font-weight: 400;
+  letter-spacing: 1.8px;
+  text-align: center;
+}
+
+.section__btnWrapper {
+  text-align: center;
+  padding-top: 30px;
+  margin: 0 auto;
+}
+
+.section__btnWrapper__routine {
+  margin-right: 80px;
+}
+
+.section__btnWrapper__list {
+  margin-left: 80px;
+}
+
+.section__btn {
+  display: inline-block;
+  padding: 10px 45px;
+  color: #ffffff;
+  font-size: 15px;
+  font-weight: bold;
+  text-decoration: none;
+  border-radius: 30px;
+  background-color: #30b6cf;
+  box-shadow: 0 1px 4px 0 rgb(0 0 0 / 12%);
+  margin-right: 40px;
+}
+
+.user_section_btn {
+  padding: 5px 22.5px;
+}
+
+.contents {
+  background-color: rgba(170, 192, 200, 0.8);
+  height: 100vh;
+}
+
+.top__contents {
+  height: 130vh;
+}
+
+.contents__edit {
+  height: 110vh;
+}
+
+.purpuse {
+  margin-top: -160px;
+}
+
+.how_to_use {
+  margin-bottom: 20px;
+  color: #ffffff;
+  font-size: 44px;
+  font-weight: bold;
+  letter-spacing: 2.5px;
+  text-align: center;
+}
+
+.habit_merit {
+  margin-bottom: 20px;
+  color: #ffffff;
+  font-size: 44px;
+  font-weight: bold;
+  letter-spacing: 2.5px;
+  text-align: center;
+}
+
+.To_Do_list {
+  margin-bottom: 20px;
+  color: #ffffff;
+  font-size: 44px;
+  font-weight: bold;
+  letter-spacing: 2.5px;
+  text-align: center;
+}
+
+.keymessage {
+  font-size: 1.4rem;
+  padding: 20px 0;
+}
+
+.keymessage_today {
+  font-size: 1.4rem;
+}
+
+.keymessage__edit {
+  font-size: 1.4rem;
+  padding-top: 30px;
+  margin-bottom: -10px;
+}
+
+.new_schedule {
+  margin-bottom: 20px;
+  color: #ffffff;
+  font-size: 1.4rem;
+  font-weight: bold;
+  letter-spacing: 2.5px;
+  text-align: center;
+}
+
+.content_list {
+  text-align: center;
+}
+
+.content_box {
+  margin-bottom: 20px;
+}
+
+.content_box_list {
+  background-color: white;
+  width: 300px;
+  margin: 0 auto;
+  border-radius: 20px;
+  padding: 5px;
+  margin-bottom: 25px
+}
+
+.content_box_list:last-of-type {
+  margin-bottom: 10px;
+}
+
+.content_box_list span {
+  position: relative;
+  left: 5px;
+}
+
+.content {
+  width: 300px;
+  height: 30px;
+  border-radius: 20px;
+  position: relative;
+  left: -14px;
+}
+
+.task {
+  padding: 10px;
+}
+
+span {
+  margin-right: 13px;
+}
+
+.down_btn {
+  display: inline-block;
+  border-style: solid;
+  border-width: 24px 14px 0 14px;
+  border-color: #30b6cf transparent transparent transparent;
+  margin-top: 15px;
+}
+
+.arrow {
+  text-align: center;
+}
+
+.section_new_btn {
+  display: flex;
+}
+
+.contents__new {
+}
+
+.more__list {
+  margin-left: 40px;
+}
+
+.more__list li {
+  display: inline-block;
+}
+
+.mypage__list {
+  margin-left: 40px;
+}
+
+.mypage__list li {
+  margin-bottom: 40px;
+}
+
+.create__time {
+  text-align: center;
+  color: #ffffff;
+  font-size: 30px;
+  font-weight: bold;
+  letter-spacing: 2.5px;
+  text-align: center;
+}
+
+ul {
+  list-style: none;
+}
+
+.content__index {
+  background-color: rgba(170, 192, 200, 0.8);
+}
+
+.adjustment {
+  margin-left: 625px;
+}
+
+.detail__btn {
+  margin-left: 43px;
+  position: relative;
+  right: 7px;
+}
+
+.new__btn {
+  margin-top: -20px;
+}
+
+.email__label {
+  margin-right: 43px;
+}
+
+.password__label {
+  margin-right: 43px;
+}
+
+.remember_password {
+  font-size: 1.2rem;
+}
+
+.nickname__btn {
+  position: relative;
+  left: 6px;
+}
+
+
+input[type=text], select {
+  border-radius: 20px;
+  position: relative;
+  left: -20px;
+  padding: 5px;
+}
+
+.gender__btn {
+  border-radius: 50px;
+  margin-top: 20px;
+}
+
+.content_list span {
+  position: relative;
+  left: -5px;
+}

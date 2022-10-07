@@ -1,5 +1,4 @@
-<div class="contents">
-  <%= link_to "作成する", new_schedule_path, class: "post" %>
+<div class="contents__index">
   <% @schedules.each do |schedule| %>
     <%= render partial: "schedule", locals: { schedule: schedule } %>
   <% end %>

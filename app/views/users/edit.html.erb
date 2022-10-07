@@ -1,0 +1,28 @@
+<div class="contents">
+  <h2 class="keyvisual__title keymessage_today">ログイン</h2>
+
+  <%= form_for(@user) do |f| %>
+    <div class="field keyvisual__title keymessage_today detail__btn">
+      <%= f.label :メールアドレス, class: "email__label" %><br />
+      <%= f.email_field :email, class: "content", autofocus: true, autocomplete: "email" %>
+    </div>
+    
+    <div class="field keyvisual__title keymessage_today detail__btn nickname__btn">
+      <%= f.label :ニックネーム, class: "email__label" %> <span>(６文字以内)</span><br />
+      <%= f.text_field :nickname, class: "content nickname__content", autofocus: true, maxlength: "6" %>
+    </div>
+    
+    <div class="field keyvisual__title keymessage_today detail__btn gender__btn">
+      <ul class="gender">
+        <li>
+          <%= f.label :性別を選択して下さい, class: "email__label" %><br />
+          <%= f.select :gender, [["男性", "男性"], ["女性", "女性"]], include_blank: "選択して下さい" %>
+        </li>
+      </ul>
+    </div>
+    
+    <div class="actions section__btnWrapper detail__btn">
+      <%= f.submit "変更", class: "section__btn" %>
+    </div>
+  <% end %>
+</div>

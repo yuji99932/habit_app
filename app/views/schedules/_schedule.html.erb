@@ -1,17 +1,32 @@
-<p><%= schedule.task1 %></p>
-<p><%= schedule.task2 %></p>
-<p><%= schedule.task3 %></p>
-<p><%= schedule.task4 %></p>
-<p><%= schedule.task5 %></p>
-<p><%= schedule.task6 %></p>
-<ul class="more_list">
-  <li>
-    <%= link_to '詳細', schedule_path(schedule.id) %>
-  </li>
-  <li>
-    <%= link_to '編集', edit_schedule_path(schedule.id) %>
-  </li>
-  <li>
-    <%= link_to '削除', schedule_path(schedule.id), method: :delete, data: {confirm: "削除しますか？"} %>
-  </li>
-</ul>
+<div class="contents">
+  <div class="create__time">
+    <%= schedule.created_at.month %><a>月</a>
+    <%= schedule.created_at.day %><a>日</a><a>作成</a>
+  </div>
+  <h2 class="keyvisual__title keymessage_today">明日やるべきこと</h2>
+  <ul class="content_list_task">
+    <li class="content_box_list"><span>1: </span><span class="task"><%= schedule.task1 %></span></li>
+    <li class="content_box_list"><span>2: </span><span class="task"><%= schedule.task2 %></span></li>
+    <li class="content_box_list"><span>3: </span><span class="task"><%= schedule.task3 %></span></li>
+    <li class="content_box_list"><span>4: </span><span class="task"><%= schedule.task4 %></span></li>
+    <li class="content_box_list"><span>5: </span><span class="task"><%= schedule.task5 %></span></li>
+    <li class="content_box_list"><span>6: </span><span class="task"><%= schedule.task6 %></span></li>
+  </ul>
+  <h2 class="keyvisual__title keymessage_today">To Doリスト</h2></h2>
+  <ul class="content_list_task">
+    <li class="content_box_list"><span>1: </span><span class="task"><%= schedule.content1 %></li>
+    <li class="content_box_list"><span>2: </span><span class="task"><%= schedule.content2 %></li>
+    <li class="content_box_list"><span>3: </span><span class="task"><%= schedule.content3 %></li>
+    <li class="content_box_list"><span>4: </span><span class="task"><%= schedule.content4 %></li>
+  </ul>
+  <div class="more__btn">
+    <ul class="section__btnWrapper more__list">
+      <li>
+        <%= link_to '編集', edit_schedule_path(schedule.id), class: "section__btn" %>
+      </li>
+      <li>
+        <%= link_to '削除', schedule_path(schedule.id), method: :delete, class: "section__btn", data: {confirm: "削除しますか？"} %>
+      </li>
+    </ul>
+  </div>
+</div>

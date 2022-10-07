@@ -1,15 +1,13 @@
 <div class="contents">
-  <h3>マイページ</h3>
-  <p><%= @nickname %>さんのスケジュール一覧</p>
-  <% @schedules.each do |schedule| %>
-    <%= render partial: "schedules/schedule", locals: { schedule: schedule } %>
-  <% end %>
-  <ul class="mypage_list">
+  <div class="keyvisual__title keymessage__edit">
+    <h3>マイページ</h3>
+  </div>
+  <ul class="section__btnWrapper mypage__list">
     <li>
-      個人情報変更
+      <%= link_to '個人情報変更', edit_user_path(current_user), class: "section__btn" %>
     </li>
     <li>
-      
+      <%= link_to 'マイスケジュール', schedules_path, class: "section__btn" %>
     </li>
   </ul>
 </div>

@@ -32,16 +32,6 @@ class SchedulesController < ApplicationController
     @nickname = current_user.nickname
   end
   
-  def newhabit
-    @schedule = Schedule.new
-    render("newhabit")
-  end
-  
-  def newschedule
-    @schedule = Schedule.new
-    render("newschedule")
-  end
-  
   
   private
   def schedule_params

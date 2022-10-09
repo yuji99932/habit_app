@@ -6,6 +6,39 @@ body {
   padding: 0px;
 }
 
+.top__contents {
+  height: 130vh;
+}
+
+.keyvisual {
+  font-family: "brandon-grotesque", "sans-serif";
+  padding: 200px 0 150px;
+  background-color: rgba(170, 192, 200, 0.8);
+  height: 100vh;
+}
+
+.keyvisual__title {
+  margin-bottom: 5px;
+  color: #ffffff;
+  font-size: 44px;
+  font-weight: bold;
+  letter-spacing: 2.5px;
+  text-align: center;
+}
+
+.keyvisual__desc {
+  margin-bottom: 80px;
+  color: #ffffff;
+  font-size: 16px;
+  font-weight: 400;
+  letter-spacing: 1.8px;
+  text-align: center;
+}
+
+.service-purpuse {
+  margin-top: -160px;
+}
+
 header {
   top: 0px;
   right: 0px;
@@ -116,31 +149,6 @@ header {
   letter-spacing: 1.2px;
 }
 
-.keyvisual {
-  font-family: "brandon-grotesque", "sans-serif";
-  padding: 200px 0 150px;
-  background-color: rgba(170, 192, 200, 0.8);
-  height: 100vh;
-}
-
-.keyvisual__title {
-  margin-bottom: 5px;
-  color: #ffffff;
-  font-size: 44px;
-  font-weight: bold;
-  letter-spacing: 2.5px;
-  text-align: center;
-}
-
-.keyvisual__desc {
-  margin-bottom: 80px;
-  color: #ffffff;
-  font-size: 16px;
-  font-weight: 400;
-  letter-spacing: 1.8px;
-  text-align: center;
-}
-
 .section__btnWrapper {
   text-align: center;
   padding-top: 30px;
@@ -177,16 +185,8 @@ header {
   height: 100vh;
 }
 
-.top__contents {
-  height: 130vh;
-}
-
 .contents__edit {
   height: 110vh;
-}
-
-.purpuse {
-  margin-top: -160px;
 }
 
 .how_to_use {
@@ -221,11 +221,29 @@ header {
   padding: 20px 0;
 }
 
+.tomorrow__task {
+  font-size: 1.4rem;
+}
+
 .keymessage_today {
   font-size: 1.4rem;
 }
 
+.keymessage_to_do {
+  font-size: 1.4rem;
+}
+
+.keymessage_mail {
+  font-size: 1.4rem;
+}
+
 .keymessage__edit {
+  font-size: 1.4rem;
+  padding-top: 30px;
+  margin-bottom: -10px;
+}
+
+.keymessage__update {
   font-size: 1.4rem;
   padding-top: 30px;
   margin-bottom: -10px;
@@ -381,4 +399,8 @@ input[type=text], select {
 .content_list span {
   position: relative;
   left: -5px;
+}
+
+.login__headline {
+  font-size: 1.4rem;
 }
